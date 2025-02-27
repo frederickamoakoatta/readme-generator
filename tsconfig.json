@@ -5,9 +5,9 @@
     "declarationMap": true,
     "sourceMap": true,
     "strict": true,
-    "module": "NodeNext",
-    "target": "ES6",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
     "esModuleInterop": true
   },
   "include": ["src"],
