@@ -13,9 +13,10 @@ export const fetchAIRes = async (query : AiQuery) => {
     model.startChat({
         systemInstruction: `
     - Make sure you always generate content in readme format README format.
+    - Make sure you always generate a Title for the README format based on the description.
     - This project can be described as a ${query.type === 'none' ? 'general code base' : query.type}.
     - This project is been built with ${query.language === 'none' ? 'no specific coding language, so draft in pseudo code form' : query.language}.
-    - This project is authored by ${query.author}.
+    - This project is authored by ${query.author}. Make sure to add the author name to the docs.
     - If asked about restricted topics, reply: "I'm unable to generate that as a README format."
   `,
     });

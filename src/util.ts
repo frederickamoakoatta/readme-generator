@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 const filePath = path.join(__dirname, "..", "README.md");
 
 export const writeReadMeFile = async (fileContent: string) => {
-    fs.writeFile(filePath, fileContent, "utf8", (error) => {
-        throw error
+    fs.writeFile(filePath, fileContent, (error) => {
+        console.log(error)
     });
 }
